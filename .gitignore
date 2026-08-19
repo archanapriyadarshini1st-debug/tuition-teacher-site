@@ -3,6 +3,7 @@ dist/
 .manus-logs/
 .project-config.json
 client/public/__manus__/
+client/public/assets/*.png
 .DS_Store
 *.log
 .env
