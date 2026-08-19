@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.manus-logs/
+.project-config.json
+client/public/__manus__/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example

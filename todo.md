@@ -1,0 +1,21 @@
+# Motion Enhancement Checklist
+
+- [x] Map a GSAP scroll choreography to the editorial learning narrative.
+- [x] Add Framer Motion micro-interactions and shared reveal primitives.
+- [x] Implement reduced-motion fallbacks and mobile-safe animation behavior.
+- [x] Validate the motion system at desktop and mobile breakpoints.
+- [ ] Save a checkpoint and deliver the animation-enhanced site.
+- [x] Review Godly for relevant design patterns and document active GitHub-skill usage.
+- [x] Review Genjutsu and Awesome Design.md, then apply compatible site refinements.
+- [x] Research Awwwards, Watermelon UI, React Bits, and Context7; then apply a focused taste upgrade.
+- [x] Review Recent Design and apply one compatible high-taste refinement.
+- [x] Research cinematic motion references and apply an accessible Fable-inspired animation and typography upgrade.
+- [x] Retrieve ui-clone-skills guidance, study SayBriefly, and implement an original reference-inspired redesign.
+- [x] Inspect Aardvark Book Club and add an original, accessible loading-screen experience.
+- [x] Restore document scrolling immediately when the loading prelude dismisses.
+- [x] Make the loading prelude smoother and slightly longer.
+- [ ] Verify GitHub access, prepare GitHub Pages deployment, and transfer the complete project to a new repository.
+- [ ] Configure the user-provided Composio credential through the supported integration flow.
+- [ ] Use the enabled GitHub connector to create the repository and prepare Pages deployment.
+- [ ] Complete Composio GitHub authorization and transfer the prepared site through Composio.
+- [ ] Verify any existing Composio GitHub connection directly before requiring another authorization step.
