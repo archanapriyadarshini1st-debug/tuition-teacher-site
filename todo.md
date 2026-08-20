@@ -14,8 +14,9 @@
 - [x] Inspect Aardvark Book Club and add an original, accessible loading-screen experience.
 - [x] Restore document scrolling immediately when the loading prelude dismisses.
 - [x] Make the loading prelude smoother and slightly longer.
-- [ ] Verify GitHub access, prepare GitHub Pages deployment, and transfer the complete project to a new repository.
-- [ ] Configure the user-provided Composio credential through the supported integration flow.
+- [x] Verify GitHub access, prepare GitHub Pages deployment, and transfer the complete project to a new repository.
+- [x] Configure the user-provided Composio credential through the supported integration flow.
 - [ ] Use the enabled GitHub connector to create the repository and prepare Pages deployment.
-- [ ] Complete Composio GitHub authorization and transfer the prepared site through Composio.
-- [ ] Verify any existing Composio GitHub connection directly before requiring another authorization step.
+- [x] Complete Composio GitHub authorization and transfer the prepared site through Composio.
+- [x] Verify any existing Composio GitHub connection directly before requiring another authorization step.
+- [x] Fix GitHub Pages image paths and first-load 404 behavior, then verify the public deployment.

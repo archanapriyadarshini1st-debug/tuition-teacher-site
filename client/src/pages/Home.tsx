@@ -61,6 +61,7 @@ const questions = [
 
 const loaderExitEase = cubicBezier(0.77, 0, 0.175, 1);
 const loaderProgressEase = cubicBezier(0.16, 1, 0.3, 1);
+const publicAsset = (fileName: string) => `${import.meta.env.BASE_URL}assets/${fileName}`;
 
 function LearningRoute({ reduceMotion }: { reduceMotion: boolean | null }) {
   return (
@@ -239,7 +240,7 @@ export default function Home() {
             <div className="hero-board" data-hero-board>
               <div className="board-topline"><span>Today’s learning brief</span><span>01 / 03</span></div>
               <div className="study-preview">
-                <img src="assets/tuition-hero-study.webp" alt="A notebook, diagrams, and learning tools arranged on a desk" />
+                <img src={publicAsset("tuition-hero-study.webp")} alt="A notebook, diagrams, and learning tools arranged on a desk" />
                 <span className="study-sticker">Let’s trace<br />the why</span>
               </div>
               <div className="board-checklist">
@@ -268,7 +269,7 @@ export default function Home() {
             <p data-reveal-item>There is no mystery system. Just a thoughtful rhythm, repeated until learning begins to feel like something a student can steer.</p>
           </div>
           <div className="brief-shell method-board" data-reveal-item>
-            <div className="method-image"><img src="assets/tuition-learning-ribbon.webp" alt="Abstract learning pathway with connected notes and marks" /></div>
+            <div className="method-image"><img src={publicAsset("tuition-learning-ribbon.webp")} alt="Abstract learning pathway with connected notes and marks" /></div>
             <div className="method-steps">
               <article><span>01</span><h3>Listen closely.</h3><p>Find the exact point where confidence drops away.</p></article>
               <article><span>02</span><h3>Make it visible.</h3><p>Draw it, map it, say it a different way.</p></article>
@@ -309,7 +310,7 @@ export default function Home() {
               <a className="brief-link" href="#contact">Discuss your child’s subjects <ArrowUpRight size={17} aria-hidden="true" /></a>
             </div>
             <div className="subject-poster" data-reveal-item>
-              <img src="assets/tuition-subject-atlas.webp" alt="Abstract educational diagrams and subject fragments" />
+              <img src={publicAsset("tuition-subject-atlas.webp")} alt="Abstract educational diagrams and subject fragments" />
               <div className="poster-star" aria-hidden="true">✦</div>
               <div className="poster-note">More than<br />a worksheet.</div>
             </div>
