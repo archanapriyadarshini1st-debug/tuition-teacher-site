@@ -9,9 +9,11 @@ import { AnimatePresence, cubicBezier, motion, useReducedMotion } from "framer-m
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowDown, ArrowUpRight, BookOpen, Brain, Check, ChevronRight, Lightbulb, Menu, PenLine, Sparkles } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
+
+const LearningConstellation = lazy(() => import("@/components/LearningConstellation"));
 
 const focusAreas = [
   {
@@ -235,6 +237,7 @@ export default function Home() {
               <ul className="hero-proof" aria-label="Teaching overview">
                 <li>All core subjects</li><li>Online &amp; offline</li><li>Clear weekly rhythm</li>
               </ul>
+              <p className="teacher-anchor" data-hero-action><span>Teacher-led tuition practice</span><i aria-hidden="true" /> One person following each learner’s questions, progress, and next step.</p>
             </div>
 
             <div className="hero-board" data-hero-board>
@@ -301,6 +304,7 @@ export default function Home() {
         </section>
 
         <section className="subject-section" data-reveal>
+          <Suspense fallback={null}><LearningConstellation reduceMotion={reduceMotion} /></Suspense>
           <div className="brief-shell subject-layout">
             <div className="subject-copy" data-reveal-item>
               <span className="caps-label">Across the timetable / 03</span>
@@ -319,7 +323,7 @@ export default function Home() {
 
         <section className="experience-band" data-reveal>
           <div className="brief-shell experience-layout">
-            <div data-reveal-item><span className="caps-label">A grounded guide / 04</span><h2>Classroom perspective.<br /><em>Tuition attention.</em></h2></div>
+              <div data-reveal-item><span className="caps-label">A grounded guide / 04</span><h2>One teacher.<br /><em>Close attention.</em></h2><p className="experience-intro">A personal tuition practice informed by classroom perspective, built around the learner in front of you.</p></div>
             <div className="experience-numbers" data-reveal-item>
               <div><strong>~4.9</strong><span>years of tuition teaching</span></div>
               <div><strong>~1–2</strong><span>years of school teaching</span></div>
@@ -347,7 +351,7 @@ export default function Home() {
           <div className="brief-shell contact-layout">
             <div data-reveal-item>
               <span className="caps-label">Start here / 06</span>
-              <h2>Tell me about<br />your learner.</h2>
+              <h2>Start with a<br /><em>teacher-led</em> conversation.</h2>
               <p>A few details are enough to begin: their class, what feels difficult, and how you would prefer to connect.</p>
             </div>
             <form className="brief-form" data-reveal-item onSubmit={(event) => event.preventDefault()}>

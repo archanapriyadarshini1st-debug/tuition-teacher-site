@@ -20,3 +20,6 @@
 - [x] Complete Composio GitHub authorization and transfer the prepared site through Composio.
 - [x] Verify any existing Composio GitHub connection directly before requiring another authorization step.
 - [x] Fix GitHub Pages image paths and first-load 404 behavior, then verify the public deployment.
+- [x] Assess the existing motion system and integrate a focused Three.js visual layer.
+- [x] Validate the Three.js enhancement across desktop, mobile, and reduced-motion modes.
+- [ ] Save a checkpoint and publish the updated Three.js-enhanced site to GitHub Pages.

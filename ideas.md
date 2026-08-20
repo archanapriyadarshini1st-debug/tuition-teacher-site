@@ -111,6 +111,10 @@ The project will not use WebGL, shader effects, Spline scenes, stock classroom p
 - Knowledge imagery is treated as connected evidence of method: annotation dots, learning sequences, explanation/practice/revision traces, and fine rules repeat across the manuscript instead of reading as isolated decorative collages.
 - Vermilion remains a disciplined annotation colour. It signals attention, sequence, and emphasis; it will not become a generic surface accent.
 - The enquiry UI is visually complete but intentionally states that final contact delivery needs to be connected, because no contact details or collection service have been supplied. No contact information, WhatsApp number, testimonial, result, or qualification will be fabricated.
+- Every major chapter must keep a visible human tuition anchor. The visual system serves a named teacher-led practice, not an impersonal education product; credibility is expressed through the teacher-led hero note, classroom-and-tuition perspective, and a direct personal enquiry coda.
+- Annotation dots, underlines, fine rules, and diagram fragments repeat as a continuous learning-journal language. Their role is to show that learning leaves a trace rather than to act as arbitrary decoration.
+- Bright teaching colors are semantic signals: lime supports discovery and foundations, tangerine marks attention and action, lilac carries reflection, and sky suggests making an idea visible. Orchard green and warm paper remain the credible base.
+- The clarity-lens identity mark uses a page-corner-like outer form, an open circular lens, and a vermilion annotation point. The temporary `[TEACHER NAME]` wordmark is custom treated with an editorial underline until final branding is supplied.
 
 ---
 
