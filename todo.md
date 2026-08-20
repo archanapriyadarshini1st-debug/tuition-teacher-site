@@ -22,4 +22,7 @@
 - [x] Fix GitHub Pages image paths and first-load 404 behavior, then verify the public deployment.
 - [x] Assess the existing motion system and integrate a focused Three.js visual layer.
 - [x] Validate the Three.js enhancement across desktop, mobile, and reduced-motion modes.
-- [ ] Save a checkpoint and publish the updated Three.js-enhanced site to GitHub Pages.
+- [x] Save a checkpoint and publish the updated Three.js-enhanced site to GitHub Pages.
+- [x] Replace the abstract constellation with a clear Three.js learning solar system.
+- [x] Validate the solar system at desktop, mobile, and reduced-motion settings.
+- [ ] Publish the corrected solar-system animation to GitHub Pages.

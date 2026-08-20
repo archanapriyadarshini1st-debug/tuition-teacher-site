@@ -19,3 +19,15 @@ The initial local review also confirmed that the new dependency did not interrup
 The desktop subject chapter now renders the intended editorial constellation behind the curriculum copy and subject poster. Browser inspection found no runtime console messages; the mounted WebGL canvas measured `921×972` pixels within a `922×972` pixel host and reported an active WebGL context.
 
 After the performance refinement, a fresh local visit completed the Prelude, rendered the enhanced clarity-lens wordmark and teacher-led hero note, and preserved the personal-practice copy in the experience and enquiry chapters. The production Pages build also separated the constellation into a `134.07 kB` gzip on-demand asset rather than loading it in the main startup bundle.
+
+GitHub Pages workflow run `#14` completed successfully for the Three.js update. Public browser inspection confirmed `200` responses for the repository-prefixed application module, stylesheet, lazy Three.js constellation module, and all three educational image assets. A short post-deploy rendering recheck is still performed to allow the visible Prelude handoff to complete.
+
+The public recheck completed successfully: the Prelude handed off to the rendered Learning Brief home page, including the teacher-led trust note and the enhanced clarity-lens wordmark. The published experience therefore has no first-visit 404, blank-screen, image-path, or lazy-module resolution issue.
+
+## Solar-System Revision
+
+The original abstract constellation has been rebuilt locally as a clear learning solar system with a central sun, three concentric orbit tracks, distinct coloured planets, a ringed outer planet, and a star field. Type checking and the GitHub Pages build both completed successfully before visual inspection.
+
+The fresh local visit completed the existing Prelude and page handoff normally after the solar-system rebuild. The scene remains isolated to the dark subject chapter, keeping the rest of the editorial learning narrative unchanged.
+
+Direct visual inspection of the centered subject chapter confirmed a recognisable solar-system composition: a luminous central sun, three large concentric orbital paths, visible coloured planets, and a ringed outer planet. The educational poster and subject copy remain readable above the WebGL field.

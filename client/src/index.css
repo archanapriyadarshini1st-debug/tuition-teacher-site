@@ -103,7 +103,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .brief-header { position: sticky; z-index: 30; top: 0; background: color-mix(in srgb, var(--paper) 93%, transparent); border-bottom: 1px solid rgba(20, 59, 32, 0.1); backdrop-filter: blur(16px); }
 .header-row { display: flex; min-height: 5.1rem; align-items: center; justify-content: space-between; }
 .brief-brand { display: inline-flex; align-items: center; gap: 0.62rem; color: var(--forest); font-family: "Bricolage Grotesque", sans-serif; font-size: 1.08rem; font-weight: 800; letter-spacing: -0.055em; }
-.brief-brand > span:last-child { display: inline-block; padding-bottom: 0.12rem; border-bottom: 2px solid var(--forest); }
+.brand-lockup { display: grid; gap: 0.08rem; line-height: 1; }
+.brand-lockup strong { display: inline-block; width: fit-content; padding-bottom: 0.13rem; border-bottom: 2px solid currentColor; font: inherit; }
+.brand-lockup small { color: rgba(20, 59, 32, 0.62); font-family: "Anthropic Sans", sans-serif; font-size: 0.46rem; font-weight: 850; letter-spacing: 0.11em; text-transform: uppercase; }
 .brand-sigil { position: relative; display: grid; width: 1.8rem; height: 1.8rem; place-items: center; overflow: hidden; border: 1px solid var(--forest); border-radius: 50% 50% 50% 14%; background: var(--paper); color: var(--forest); transform: rotate(-16deg); }
 .brand-sigil::before { position: absolute; inset: 0.28rem 0.22rem 0.22rem 0.34rem; border: 1.5px solid var(--forest); border-radius: 50%; content: ""; }
 .brand-sigil::after { position: absolute; top: 0.28rem; right: 0.25rem; width: 0.42rem; height: 0.42rem; border-radius: 50%; background: var(--tangerine); box-shadow: -0.26rem 0.54rem 0 -0.13rem var(--sun); content: ""; }
@@ -141,8 +143,8 @@ h1 em, h2 em { color: var(--tangerine); font-style: normal; }
 .brief-link { display: inline-flex; align-items: center; gap: 0.28rem; border-bottom: 1px solid currentColor; padding-bottom: 0.18rem; color: var(--forest); font-size: 0.78rem; font-weight: 850; }
 .hero-proof { display: flex; flex-wrap: wrap; gap: 0.55rem 1.2rem; margin: 3.2rem 0 0; padding: 0; color: rgba(20, 59, 32, 0.7); list-style: none; font-size: 0.68rem; font-weight: 850; letter-spacing: 0.08em; text-transform: uppercase; }
 .hero-proof li::before { display: inline-block; width: 0.45rem; height: 0.45rem; margin-right: 0.45rem; border-radius: 50%; background: var(--tangerine); content: ""; }
-.teacher-anchor { display: flex; max-width: 33rem; align-items: center; gap: 0.55rem; margin: 1.15rem 0 0; color: rgba(20, 59, 32, 0.72); font-size: 0.72rem; font-weight: 650; line-height: 1.42; }
-.teacher-anchor span { color: var(--forest); font-size: 0.61rem; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
+.teacher-anchor { display: flex; max-width: 35rem; align-items: center; gap: 0.55rem; margin: 1.15rem 0 0; padding-top: 0.7rem; border-top: 1px solid rgba(20, 59, 32, 0.16); color: rgba(20, 59, 32, 0.72); font-size: 0.72rem; font-weight: 650; line-height: 1.42; }
+.teacher-anchor span { color: var(--forest); font-size: 0.61rem; font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase; }
 .teacher-anchor i { width: 1.4rem; height: 1px; flex: 0 0 auto; background: var(--tangerine); }
 .hero-board { position: relative; isolation: isolate; width: min(100%, 31rem); justify-self: end; padding: 1rem; border: 1px solid rgba(20, 59, 32, 0.24); border-radius: 2rem 2rem 2rem 0.45rem; background: var(--sun); box-shadow: 13px 13px 0 var(--forest); }
 .board-topline { display: flex; justify-content: space-between; margin: 0.05rem 0 0.85rem; color: var(--forest); font-size: 0.61rem; font-weight: 900; letter-spacing: 0.11em; text-transform: uppercase; }
@@ -227,18 +229,18 @@ h2 { margin: 1rem 0 0; font-size: clamp(3rem, 5.8vw, 6.15rem); font-weight: 800;
 .questions-layout h2 { max-width: 10ch; font-size: clamp(2.6rem, 4.8vw, 5.25rem); }
 .questions-list { border-top: 1px solid var(--forest); }
 .questions-list [data-slot="accordion-item"] { border-bottom: 1px solid var(--line); }
-.questions-list [data-slot="accordion-trigger"] { min-height: 5.7rem; padding: 1rem 0; color: var(--forest); font-family: "Bricolage Grotesque", sans-serif; font-size: clamp(1.35rem, 2vw, 1.85rem); font-weight: 750; letter-spacing: -0.05em; text-align: left; text-decoration: none; }
+.questions-list [data-slot="accordion-trigger"] { min-height: 5.35rem; padding: 1rem 0; color: var(--forest); font-family: "Anthropic Sans", sans-serif; font-size: clamp(1rem, 1.45vw, 1.22rem); font-weight: 780; letter-spacing: -0.025em; text-align: left; text-decoration: none; }
 .questions-list [data-slot="accordion-trigger"]:hover { color: var(--tangerine); text-decoration: none; }
 .question-number { display: inline-block; min-width: 3rem; color: var(--tangerine); font-family: "Anthropic Sans", sans-serif; font-size: 0.66rem; font-weight: 900; letter-spacing: 0.1em; vertical-align: middle; }
 .questions-list [data-slot="accordion-content"] { max-width: 43rem; padding: 0 2rem 1.6rem 3rem; color: rgba(20, 59, 32, 0.73); font-size: 0.93rem; line-height: 1.7; }
 
-.contact-section { position: relative; padding: clamp(5rem, 10vw, 10rem) 0; overflow: hidden; background: var(--tangerine); color: var(--forest); }
+.contact-section { position: relative; padding: clamp(5rem, 10vw, 10rem) 0; overflow: hidden; background: #f3d9cf; color: var(--forest); }
 .contact-layout h2 { font-size: clamp(2.55rem, 4.7vw, 5rem); }
 .contact-section::before { position: absolute; inset: 0; opacity: 0.32; background-image: radial-gradient(circle at 1px 1px, var(--forest) 1px, transparent 0); background-size: 17px 17px; content: ""; mask-image: linear-gradient(90deg, black, transparent 62%); pointer-events: none; }
 .contact-layout { position: relative; display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(22rem, 0.94fr); gap: clamp(3rem, 8vw, 9rem); }
 .contact-layout h2 { max-width: 9ch; }
 .contact-layout > div p { max-width: 28rem; margin: 1.3rem 0 0; font-size: 1rem; font-weight: 650; }
-.contact-spark { position: absolute; top: 2rem; right: 7vw; color: var(--sun); font-size: clamp(6rem, 16vw, 13rem); line-height: 1; transform: rotate(17deg); }
+.contact-spark { position: absolute; top: 2rem; right: 7vw; color: var(--tangerine); font-size: clamp(6rem, 16vw, 13rem); line-height: 1; transform: rotate(17deg); }
 .brief-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-content: start; padding: 1.2rem; border: 1px solid var(--forest); border-radius: 1.65rem 0.3rem 1.65rem 1.65rem; background: var(--forest); color: var(--paper); box-shadow: 10px 10px 0 var(--sun); }
 .brief-form label { display: grid; gap: 0.45rem; color: rgba(252,250,245,0.73); font-size: 0.62rem; font-weight: 900; letter-spacing: 0.1em; text-transform: uppercase; }
 .brief-form input, .brief-form select, .brief-form textarea { width: 100%; border: 1px solid rgba(252,250,245,0.32); border-radius: 0.7rem; padding: 0.78rem 0.8rem; background: rgba(252,250,245,0.07); color: var(--paper); font-size: 0.86rem; font-weight: 600; letter-spacing: normal; text-transform: none; transition: border-color 180ms var(--ease-out), background-color 180ms var(--ease-out); }
@@ -253,6 +255,7 @@ h2 { margin: 1rem 0 0; font-size: clamp(3rem, 5.8vw, 6.15rem); font-weight: 800;
 .brief-footer { background: var(--forest); color: var(--paper); }
 .footer-row { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1.5rem; min-height: 6rem; }
 .brief-footer .brief-brand { color: var(--paper); }
+.brief-footer .brand-lockup small { color: rgba(252,250,245,0.64); }
 .brief-footer .brand-sigil { background: var(--sun); }
 .brief-footer p { margin: 0; color: rgba(252,250,245,0.64); font-size: 0.78rem; font-weight: 600; text-align: center; }
 .brief-footer > .footer-row > a:last-child { display: inline-flex; justify-self: end; align-items: center; gap: 0.35rem; color: var(--sun); font-size: 0.72rem; font-weight: 800; }
@@ -293,6 +296,7 @@ h2 { margin: 1rem 0 0; font-size: clamp(3rem, 5.8vw, 6.15rem); font-weight: 800;
   .hero-cta-row { align-items: flex-start; flex-direction: column; }
   .hero-proof { display: grid; gap: 0.45rem; }
   .teacher-anchor { align-items: flex-start; flex-wrap: wrap; }
+  .brand-lockup small { display: none; }
   .no-more-layout > p { font-size: clamp(2.55rem, 12.5vw, 4rem); }
   .experience-numbers > div { grid-template-columns: 1fr; gap: 0.45rem; }
   .questions-list [data-slot="accordion-content"] { padding-left: 0; }

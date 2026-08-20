@@ -200,7 +200,7 @@ export default function Home() {
         <div className="brief-shell header-row">
           <a href="#top" className="brief-brand" aria-label="[TEACHER NAME] home">
             <span className="brand-sigil" aria-hidden="true"><Sparkles size={18} /></span>
-            <span>[TEACHER NAME]</span>
+            <span className="brand-lockup"><strong>[TEACHER NAME]</strong><small>Private tuition practice</small></span>
           </a>
           <nav className="brief-nav" aria-label="Primary navigation">
             <a href="#method">Method</a>
@@ -231,17 +231,17 @@ export default function Home() {
               <h1 id="brief-title" data-hero-title>Understand the work.<br /><em>Own the answer.</em></h1>
               <p className="hero-summary" data-hero-copy>Thoughtful all-subject tuition that turns a student’s “I’m stuck” into a calm, practical next step — online or offline.</p>
               <div className="hero-cta-row">
-                <motion.a className="brief-button brief-button-dark" href="#contact" data-hero-action whileHover={{ y: -3, scale: 1.015 }} whileTap={{ scale: 0.97 }} transition={{ type: "spring", stiffness: 480, damping: 28 }}><span>Start a learning brief</span><ArrowDown size={17} aria-hidden="true" /></motion.a>
+                <motion.a className="brief-button brief-button-dark" href="#contact" data-hero-action whileHover={{ y: -3, scale: 1.015 }} whileTap={{ scale: 0.97 }} transition={{ type: "spring", stiffness: 480, damping: 28 }}><span>Talk about your learner</span><ArrowDown size={17} aria-hidden="true" /></motion.a>
                 <motion.a className="brief-link" href="#method" data-hero-action whileHover={{ x: 5 }} whileTap={{ scale: 0.98 }} transition={{ type: "spring", stiffness: 500, damping: 30 }}>See how it works <ChevronRight size={18} aria-hidden="true" /></motion.a>
               </div>
               <ul className="hero-proof" aria-label="Teaching overview">
                 <li>All core subjects</li><li>Online &amp; offline</li><li>Clear weekly rhythm</li>
               </ul>
-              <p className="teacher-anchor" data-hero-action><span>Teacher-led tuition practice</span><i aria-hidden="true" /> One person following each learner’s questions, progress, and next step.</p>
+              <p className="teacher-anchor" data-hero-action><span>One teacher, from first question to next step</span><i aria-hidden="true" /> Personal tuition for a learner’s subjects, study habits, and growing confidence.</p>
             </div>
 
             <div className="hero-board" data-hero-board>
-              <div className="board-topline"><span>Today’s learning brief</span><span>01 / 03</span></div>
+              <div className="board-topline"><span>Teacher’s lesson notes</span><span>01 / 03</span></div>
               <div className="study-preview">
                 <img src={publicAsset("tuition-hero-study.webp")} alt="A notebook, diagrams, and learning tools arranged on a desk" />
                 <span className="study-sticker">Let’s trace<br />the why</span>
@@ -311,7 +311,7 @@ export default function Home() {
               <h2>Maths, language, science — and the habits beneath them.</h2>
               <p>All core subjects are supported. More importantly, each lesson also builds planning, recall, asking better questions, and returning to an idea without panic.</p>
               <div className="subject-tags"><span>Understand</span><span>Practise</span><span>Recall</span><span>Explain</span></div>
-              <a className="brief-link" href="#contact">Discuss your child’s subjects <ArrowUpRight size={17} aria-hidden="true" /></a>
+              <a className="brief-link" href="#contact">Talk through the subjects <ArrowUpRight size={17} aria-hidden="true" /></a>
             </div>
             <div className="subject-poster" data-reveal-item>
               <img src={publicAsset("tuition-subject-atlas.webp")} alt="Abstract educational diagrams and subject fragments" />
@@ -360,13 +360,13 @@ export default function Home() {
               <label>Student’s class<select name="class" defaultValue=""><option value="" disabled>Select a class</option><option>Class 1–5</option><option>Class 6–8</option><option>Class 9–10</option></select></label>
               <label>Preferred format<select name="format" defaultValue=""><option value="" disabled>Choose a format</option><option>Online</option><option>Offline</option><option>Open to either</option></select></label>
               <label className="form-wide">What would you like support with?<textarea name="message" placeholder="Subjects, topics, goals, or learning habits..." /></label>
-              <div className="form-footer form-wide"><p>No pressure, no automated lesson plan. This simply begins a useful conversation.</p><motion.button type="submit" className="brief-button brief-button-light" whileHover={{ y: -3, scale: 1.015 }} whileTap={{ scale: 0.97 }} transition={{ type: "spring", stiffness: 480, damping: 28 }}>Send the brief <ArrowUpRight size={17} aria-hidden="true" /></motion.button></div>
+              <div className="form-footer form-wide"><p>No pressure or automated plan. A useful first conversation starts with a few honest details.</p><motion.button type="submit" className="brief-button brief-button-light" whileHover={{ y: -3, scale: 1.015 }} whileTap={{ scale: 0.97 }} transition={{ type: "spring", stiffness: 480, damping: 28 }}>Send your note <ArrowUpRight size={17} aria-hidden="true" /></motion.button></div>
             </form>
           </div>
         </section>
       </main>
 
-      <footer className="brief-footer"><div className="brief-shell footer-row"><a href="#top" className="brief-brand"><span className="brand-sigil"><Sparkles size={16} /></span><span>[TEACHER NAME]</span></a><p>Learning gets lighter when it makes sense.</p><a href="#top">Back to top <ArrowUpRight size={15} aria-hidden="true" /></a></div></footer>
+      <footer className="brief-footer"><div className="brief-shell footer-row"><a href="#top" className="brief-brand"><span className="brand-sigil"><Sparkles size={16} /></span><span className="brand-lockup"><strong>[TEACHER NAME]</strong><small>Private tuition practice</small></span></a><p>Learning gets lighter when it makes sense.</p><a href="#top">Back to top <ArrowUpRight size={15} aria-hidden="true" /></a></div></footer>
     </div>
   );
 }

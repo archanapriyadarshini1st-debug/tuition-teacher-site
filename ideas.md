@@ -115,6 +115,9 @@ The project will not use WebGL, shader effects, Spline scenes, stock classroom p
 - Annotation dots, underlines, fine rules, and diagram fragments repeat as a continuous learning-journal language. Their role is to show that learning leaves a trace rather than to act as arbitrary decoration.
 - Bright teaching colors are semantic signals: lime supports discovery and foundations, tangerine marks attention and action, lilac carries reflection, and sky suggests making an idea visible. Orchard green and warm paper remain the credible base.
 - The clarity-lens identity mark uses a page-corner-like outer form, an open circular lens, and a vermilion annotation point. The temporary `[TEACHER NAME]` wordmark is custom treated with an editorial underline until final branding is supplied.
+- Bricolage Grotesque is reserved for hero statements, chapter headlines, and teaching-card titles. Anthropic Sans carries explanatory copy, enquiry details, FAQs, labels, and practical parent information so the page maintains editorial pacing.
+- The SayBriefly-like energy is continuously counterbalanced by a visible teacher-led practice cue; personal tuition, calm parent-facing language, and an attentive educator’s point of view are always clearer than product or workflow metaphors.
+- Orchard green and warm paper are the main brand atmosphere. Lime represents discovery, tangerine signals action, lilac indicates reflection, and sky relates to making an idea visible; saturated color surfaces do not replace the calm base.
 
 ---
 
