@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Build static site
-        run: pnpm build:pages -- --base="${{ steps.pages.outputs.base_path }}/"
+        run: GITHUB_PAGES_BASE="${{ steps.pages.outputs.base_path }}/" pnpm build:pages
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

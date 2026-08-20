@@ -204,6 +204,7 @@ function vitePluginStorageProxy(): Plugin {
 }
 
 const isGitHubPages = process.env.GITHUB_PAGES === "true";
+const githubPagesBase = process.env.GITHUB_PAGES_BASE || "/";
 const plugins = [
   react(),
   tailwindcss(),
@@ -212,6 +213,7 @@ const plugins = [
 ];
 
 export default defineConfig({
+  base: isGitHubPages ? githubPagesBase : "/",
   plugins,
   resolve: {
     alias: {
