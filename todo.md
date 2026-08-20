@@ -25,4 +25,7 @@
 - [x] Save a checkpoint and publish the updated Three.js-enhanced site to GitHub Pages.
 - [x] Replace the abstract constellation with a clear Three.js learning solar system.
 - [x] Validate the solar system at desktop, mobile, and reduced-motion settings.
-- [ ] Publish the corrected solar-system animation to GitHub Pages.
+- [x] Publish the corrected solar-system animation to GitHub Pages.
+- [x] Slow the prelude and rebuild Ask, Try, and Return as an atom-style orbital system.
+- [x] Validate the revised intro timing and orbit across desktop, mobile, and reduced-motion settings.
+- [ ] Publish the revised atom-style prelude to GitHub Pages.

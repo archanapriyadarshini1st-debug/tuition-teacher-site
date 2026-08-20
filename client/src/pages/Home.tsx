@@ -82,23 +82,26 @@ function LearningLoader({ reduceMotion }: { reduceMotion: boolean | null }) {
 
   useEffect(() => {
     if (reduceMotion) return;
-    const interval = window.setInterval(() => setWordIndex((value) => (value + 1) % words.length), 640);
+    const interval = window.setInterval(() => setWordIndex((value) => (value + 1) % words.length), 980);
     return () => window.clearInterval(interval);
   }, [reduceMotion]);
 
   return (
-    <motion.div className="learning-loader" initial={{ opacity: 1 }} exit={{ y: "-100%", transition: { duration: reduceMotion ? 0.01 : 0.94, ease: loaderExitEase } }} aria-live="polite" aria-label="Preparing the learning brief">
+    <motion.div className="learning-loader" initial={{ opacity: 1 }} exit={{ y: "-100%", transition: { duration: reduceMotion ? 0.01 : 1.08, ease: loaderExitEase } }} aria-live="polite" aria-label="Preparing the learning brief">
       <div className="loader-grain" aria-hidden="true" />
       <div className="loader-topline"><span>[TEACHER NAME]</span><span>Preparing your learning brief</span></div>
       <div className="loader-stage">
-        <motion.div className="loader-orbit loader-orbit-one" aria-hidden="true" animate={reduceMotion ? undefined : { rotate: 360 }} transition={{ duration: 9, ease: "linear", repeat: Infinity }} />
-        <motion.div className="loader-orbit loader-orbit-two" aria-hidden="true" animate={reduceMotion ? undefined : { rotate: -360 }} transition={{ duration: 13, ease: "linear", repeat: Infinity }} />
-        <motion.div className="loader-note loader-note-one" initial={reduceMotion ? false : { opacity: 0, x: -28, y: 20, rotate: -12, scale: 0.88 }} animate={{ opacity: 1, x: 0, y: 0, rotate: -8, scale: 1 }} transition={{ delay: 0.15, type: "spring", stiffness: 185, damping: 21 }}><span>Ask</span><i /></motion.div>
-        <motion.div className="loader-note loader-note-two" initial={reduceMotion ? false : { opacity: 0, x: 32, y: -18, rotate: 14, scale: 0.88 }} animate={{ opacity: 1, x: 0, y: 0, rotate: 8, scale: 1 }} transition={{ delay: 0.34, type: "spring", stiffness: 185, damping: 21 }}><span>Try</span><i /></motion.div>
-        <motion.div className="loader-note loader-note-three" initial={reduceMotion ? false : { opacity: 0, y: 30, rotate: 2, scale: 0.88 }} animate={{ opacity: 1, y: 0, rotate: 0, scale: 1 }} transition={{ delay: 0.53, type: "spring", stiffness: 185, damping: 21 }}><span>Return</span><i /></motion.div>
-        <motion.div className="loader-core" initial={reduceMotion ? false : { opacity: 0, scale: 0.86, rotate: -4 }} animate={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ delay: 0.28, type: "spring", stiffness: 160, damping: 18 }}><span className="loader-core-mark">✦</span><AnimatePresence mode="wait"><motion.strong key={wordIndex} initial={{ opacity: 0, y: 13, filter: "blur(4px)" }} animate={{ opacity: 1, y: 0, filter: "blur(0px)" }} exit={{ opacity: 0, y: -13, filter: "blur(4px)" }} transition={{ duration: reduceMotion ? 0.01 : 0.3, ease: "easeOut" }}>{words[wordIndex]}</motion.strong></AnimatePresence><small>is where it starts</small></motion.div>
+        <motion.div className="loader-orbit loader-orbit-one" aria-hidden="true" animate={reduceMotion ? undefined : { rotate: [22, 29, 22] }} transition={{ duration: 13, ease: "easeInOut", repeat: Infinity }} />
+        <motion.div className="loader-orbit loader-orbit-two" aria-hidden="true" animate={reduceMotion ? undefined : { rotate: [-22, -29, -22] }} transition={{ duration: 15, ease: "easeInOut", repeat: Infinity }} />
+        <motion.div className="loader-orbit loader-orbit-three" aria-hidden="true" animate={reduceMotion ? undefined : { rotate: [88, 96, 88] }} transition={{ duration: 17, ease: "easeInOut", repeat: Infinity }} />
+        <motion.div className="loader-electron-system" aria-hidden="true" animate={reduceMotion ? undefined : { rotate: 360 }} transition={{ delay: 0.65, duration: 15.5, ease: "linear", repeat: Infinity }}>
+          <motion.div className="loader-note loader-note-one" initial={reduceMotion ? false : { opacity: 0, scale: 0.78 }} animate={{ opacity: 1, scale: 1, rotate: reduceMotion ? 0 : -360 }} transition={{ opacity: { delay: 0.24, duration: 0.52, ease: "easeOut" }, scale: { delay: 0.24, type: "spring", stiffness: 165, damping: 20 }, rotate: { delay: 0.65, duration: 15.5, ease: "linear", repeat: Infinity } }}><span>Ask</span><i /></motion.div>
+          <motion.div className="loader-note loader-note-two" initial={reduceMotion ? false : { opacity: 0, scale: 0.78 }} animate={{ opacity: 1, scale: 1, rotate: reduceMotion ? 0 : -360 }} transition={{ opacity: { delay: 0.5, duration: 0.52, ease: "easeOut" }, scale: { delay: 0.5, type: "spring", stiffness: 165, damping: 20 }, rotate: { delay: 0.65, duration: 15.5, ease: "linear", repeat: Infinity } }}><span>Try</span><i /></motion.div>
+          <motion.div className="loader-note loader-note-three" initial={reduceMotion ? false : { opacity: 0, scale: 0.78 }} animate={{ opacity: 1, scale: 1, rotate: reduceMotion ? 0 : -360 }} transition={{ opacity: { delay: 0.76, duration: 0.52, ease: "easeOut" }, scale: { delay: 0.76, type: "spring", stiffness: 165, damping: 20 }, rotate: { delay: 0.65, duration: 15.5, ease: "linear", repeat: Infinity } }}><span>Return</span><i /></motion.div>
+        </motion.div>
+        <motion.div className="loader-core" initial={reduceMotion ? false : { opacity: 0, scale: 0.8, rotate: -4 }} animate={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ delay: 0.42, type: "spring", stiffness: 145, damping: 18 }}><span className="loader-core-mark">✦</span><AnimatePresence mode="wait"><motion.strong key={wordIndex} initial={{ opacity: 0, y: 13, filter: "blur(4px)" }} animate={{ opacity: 1, y: 0, filter: "blur(0px)" }} exit={{ opacity: 0, y: -13, filter: "blur(4px)" }} transition={{ duration: reduceMotion ? 0.01 : 0.38, ease: "easeOut" }}>{words[wordIndex]}</motion.strong></AnimatePresence><small>is where it starts</small></motion.div>
       </div>
-      <div className="loader-footer"><span>01 / 01</span><div className="loader-progress"><motion.i initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: reduceMotion ? 0.01 : 2.44, ease: loaderProgressEase }} /></div><span>Class 1–10</span></div>
+      <div className="loader-footer"><span>01 / 01</span><div className="loader-progress"><motion.i initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: reduceMotion ? 0.01 : 4.12, ease: loaderProgressEase }} /></div><span>Class 1–10</span></div>
     </motion.div>
   );
 }
@@ -110,7 +113,7 @@ export default function Home() {
 
   useEffect(() => {
     if (!showLoader) return;
-    const duration = reduceMotion ? 120 : 2600;
+    const duration = reduceMotion ? 120 : 4300;
     const timeout = window.setTimeout(() => setShowLoader(false), duration);
     return () => window.clearTimeout(timeout);
   }, [reduceMotion, showLoader]);

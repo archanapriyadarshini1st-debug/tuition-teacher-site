@@ -31,3 +31,11 @@ The original abstract constellation has been rebuilt locally as a clear learning
 The fresh local visit completed the existing Prelude and page handoff normally after the solar-system rebuild. The scene remains isolated to the dark subject chapter, keeping the rest of the editorial learning narrative unchanged.
 
 Direct visual inspection of the centered subject chapter confirmed a recognisable solar-system composition: a luminous central sun, three large concentric orbital paths, visible coloured planets, and a ringed outer planet. The educational poster and subject copy remain readable above the WebGL field.
+
+GitHub Pages workflow run `#16` completed successfully for the solar-system correction. A cache-busted public visit completed the Prelude, resolved all public content, and revealed the revised teacher-led identity, parent-facing calls to action, and lesson-note labelling without asset or module errors.
+
+The live subject chapter was inspected directly after centering it in the public page. It displays the intended central sun, three orbital rings, visible coloured planets, and a ringed outer planet behind the subject material—replacing the earlier abstract floating-ball composition.
+
+## Atom-Style Prelude Revision
+
+The Prelude has been extended from `2.6s` to `4.3s`. Its Ask, Try, and Return notes now enter sequentially around the central learning message and rotate as an electron system across three visible elliptical atom paths. The existing motion-safe path still suppresses non-essential loader movement under reduced-motion preferences.
